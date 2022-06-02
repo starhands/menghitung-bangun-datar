@@ -7,7 +7,7 @@ original_list=(" ", "Segitiga", "Persegi", "Persegi Panjang")
 #1. as sidebar menu
 add_selectbox = st.sidebar.selectbox(
     "Pilih",
-    (" ", "Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
+    ("Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
 )
 
 
