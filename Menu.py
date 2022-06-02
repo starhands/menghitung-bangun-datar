@@ -69,7 +69,7 @@ if add_selectbox== "Belah Ketupat":
     d2=st.number_input("Masukan Nilai Diagonal 2(cm)", 0)
     hasil6=st.button("Menghitung Luas")
     if hasil6:
-        Luas6 = d1*d2
+        Luas6 = 0.5 * d1 * d2
         st.success(f"luasnya adalah {Luas6} cm^2")      
         
 if add_selectbox== "Layang-Layang":
@@ -78,5 +78,5 @@ if add_selectbox== "Layang-Layang":
     d4=st.number_input("Masukan Nilai Diagonal 2(cm)", 0)
     hasil5=st.button("Menghitung Luas")
     if hasil5:
-        Luas5 = d3*d4
+        Luas5 = 0.5 *d3 * d4
         st.success(f"luasnya adalah {Luas5} cm^2")               
