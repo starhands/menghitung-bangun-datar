@@ -5,7 +5,7 @@ import numpy as np
 st.title("Menghitung Luas Bangun Datar")
 original_list=(" ", "Segitiga", "Persegi", "Persegi Panjang")
 #1. as sidebar menu
-add_selectbox = st.sidebar.selectbox(
+add_selectbox = st.selectbox(
     "Pilih",
     ("Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
 )
