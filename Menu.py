@@ -7,7 +7,7 @@ original_list=(" ", "Segitiga", "Persegi", "Persegi Panjang")
 #1. as sidebar menu
 add_selectbox = st.sidebar.selectbox(
     "Pilih",
-    ("Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium")
+    ("Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
 )
 if add_selectbox== "Segitiga":
     st.header("Menghitung Luas Segitiga")
@@ -53,3 +53,30 @@ if add_selectbox== "Trapesium":
     if hasilt:
         Luast = 0.5 * (at + al) * t1
         st.success(f"luasnya adalah {Luast} cm^2")
+        
+if add_selectbox== "Jajar Genjang":
+    st.header("Menghitung Luas Jajar Genjang")
+    a1=st.number_input("Masukan Nilai Panjang(cm)", 0)
+    t2=st.number_input("Masukan Nilai Tinggi(cm)", 0)
+    hasil5=st.button("Menghitung Luas")
+    if hasil5:
+        Luas5 = a1*t2
+        st.success(f"luasnya adalah {Luas5} cm^2")       
+        
+if add_selectbox== "Belah Ketupat":
+    st.header("Menghitung Luas Belah Ketupat")
+    d1=st.number_input("Masukan Nilai Diagonal 1(cm)", 0)
+    d2=st.number_input("Masukan Nilai Diagonal 2(cm)", 0)
+    hasil6=st.button("Menghitung Luas")
+    if hasil6:
+        Luas6 = d1*d2
+        st.success(f"luasnya adalah {Luas6} cm^2")      
+        
+if add_selectbox== "Layang-Layang":
+    st.header("Menghitung Luas Layang-Layang")
+    d3=st.number_input("Masukan Nilai Diagonal 1(cm)", 0)
+    d4=st.number_input("Masukan Nilai Diagonal 2(cm)", 0)
+    hasil5=st.button("Menghitung Luas")
+    if hasil5:
+        Luas5 = d3*d4
+        st.success(f"luasnya adalah {Luas5} cm^2")               
