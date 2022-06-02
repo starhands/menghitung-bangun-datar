@@ -7,8 +7,12 @@ original_list=(" ", "Segitiga", "Persegi", "Persegi Panjang")
 #1. as sidebar menu
 add_selectbox = st.sidebar.selectbox(
     "Pilih",
-    ("Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
+    (" ", "Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
 )
+
+if add_selectbox== " ":
+    st.header("Silahkan pilih bangun datar pada ikon panah")
+
 if add_selectbox== "Segitiga":
     st.header("Menghitung Luas Segitiga")
     a=st.number_input("Masukan Nilai Alas(cm)", 0)
