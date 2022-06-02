@@ -17,7 +17,6 @@ if add_selectbox== "Segitiga":
     if hasil3:
         Luas3 = 0.5 * a * t
         st.success(f"luasnya adalah {Luas3} cm^2")
-        st.write("(0.5 x (a) x (t))")
 
 
 if add_selectbox== "Persegi":
@@ -26,7 +25,7 @@ if add_selectbox== "Persegi":
     hasil4=st.button("Menghitung Luas")
     if hasil4:
         Luas4 = s*s
-        st.success(f"luasnya adalah {Luas4}")
+        st.success(f"luasnya adalah {Luas4} cm^2")
     
 if add_selectbox== "Persegi Panjang":
     st.header("Menghitung Luas Persegi Panjang")
@@ -35,7 +34,7 @@ if add_selectbox== "Persegi Panjang":
     hasil4a=st.button("Menghitung Luas")
     if hasil4a:
         Luas4a = p*l
-        st.success(f"luasnya adalah {Luas4a}")
+        st.success(f"luasnya adalah {Luas4a} cm^2")
 
 if add_selectbox== "Lingkaran":
     st.header("Menghitung Luas Lingkaran")
@@ -43,7 +42,7 @@ if add_selectbox== "Lingkaran":
     hasilo=st.button("Menghitung Luas")
     if hasilo:
         Luaso = 3.1416 * r * r
-        st.success(f"luasnya adalah {Luaso}")
+        st.success(f"luasnya adalah {Luaso} cm^2")
     
 if add_selectbox== "Trapesium":
     st.header("Menghitung Luas Trapesium")
@@ -53,4 +52,4 @@ if add_selectbox== "Trapesium":
     hasilt=st.button("Menghitung Luas")
     if hasilt:
         Luast = 0.5 * (at + al) * t1
-        st.success(f"luasnya adalah {Luast}")
+        st.success(f"luasnya adalah {Luast} cm^2")
