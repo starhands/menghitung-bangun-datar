@@ -47,9 +47,10 @@ if add_selectbox== "Lingkaran":
     
 if add_selectbox== "Trapesium":
     st.header("Menghitung Luas Trapesium")
-    d1=st.number_input("Masukan Nilai Diagonal 1(cm)", 0)
-    d2=st.number_input("Masukan Nilai Diagonal 2(cm)", 0)
+    at=st.number_input("Masukan Nilai Sisi Atas(cm)", 0)
+    al=st.number_input("Masukan Nilai Alas(cm)", 0)
+    t1=st.number_input("Masukan Nilai Tinggi(cm)", 0)
     hasilt=st.button("Menghitung Luas")
     if hasilt:
-        Luast = 0.5 * a * t
+        Luast = 0.5 * (at + al) * t1
         st.success(f"luasnya adalah {Luast}")
