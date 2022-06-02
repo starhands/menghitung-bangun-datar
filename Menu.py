@@ -10,8 +10,6 @@ add_selectbox = st.sidebar.selectbox(
     (" ", "Segitiga", "Persegi", "Persegi Panjang", "Lingkaran", "Trapesium", "Jajar Genjang", "Belah Ketupat", "Layang-Layang")
 )
 
-if add_selectbox== " ":
-    st.header("Silahkan pilih bangun datar pada ikon panah")
 
 if add_selectbox== "Segitiga":
     st.header("Menghitung Luas Segitiga")
